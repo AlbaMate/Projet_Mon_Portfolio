@@ -1,0 +1,88 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<section class="box skills">
+  <div class="stack gap-2 lg:gap-4">
+    <Icon
+      icon="terminal-window"
+      color="var(--accent-regular)"
+      size="2.5rem"
+      gradient
+    />
+    <h2>Développeusse Full Stack</h2>
+    <p>
+      Développeuse en cours de formation à Ada Tech School, je suis à la
+      recherche d’une alternance de 12 mois à partir du 1er novembre 2024 afin
+      de poursuivre mon apprentissage au rythme de 4 jours par semaine en
+      entreprise..
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+    <Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+    <h2>Ingineure Agronome</h2>
+    <p>
+      Production et qualité des semences (Entreprise de production et
+      commercialisation des semences) UEB Semillas Santiago de Cuba CUBA
+      (Culturels in-vitro) Biofabrica de semillas de Santiago de Cuba.
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+    <Icon
+      icon="strategy"
+      color="var(--accent-regular)"
+      size="2.5rem"
+      gradient
+    />
+    <h2>Polyvalent Discipliné Responsable</h2>
+    <p>
+      Je suis une développeuse full stack junior Polyvalent, capable de
+      m'adapter à diverses tâches de la programmation. Mon organisation me
+      permettent de travailler de manière méthodique et assidue, assurant la
+      qualité et la cohérence de mes projets. En tant que personne responsable,
+      je suis fière de ma fiabilité et de ma conscience professionnelle,
+      toujours prête à fournir un travail réfléchi et digne de confiance.
+    </p>
+  </div>
+</section>
+
+<style>
+  .box {
+    border: 1px solid var(--gray-800);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: var(--gray-999_40);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .skills h2 {
+    font-size: var(--text-lg);
+  }
+
+  .skills p {
+    color: var(--gray-400);
+  }
+
+  @media (min-width: 50em) {
+    .box {
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
+    }
+
+    .skills h2 {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>
